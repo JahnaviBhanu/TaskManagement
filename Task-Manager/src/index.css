@@ -1,0 +1,273 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* ===== AUTH (LOGIN / REGISTER) ===== */
+.auth-box {
+  width: 350px;
+  margin: 80px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-box input,
+.auth-box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background: #4338ca;
+}
+
+/* ===== DASHBOARD ===== */
+.welcome {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Centered task container */
+.task-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* ===== TASK LIST ===== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ===== TASK CARD ===== */
+.task-card {
+  background: white;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+}
+
+.task-info h4 {
+  margin-bottom: 5px;
+}
+
+/* ===== TASK ACTIONS ===== */
+.task-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.task-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ===== BUTTON COLORS (UPDATED) ===== */
+.edit-btn {
+  background: #3b82f6; /* BLUE */
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #2563eb;
+}
+
+.pending-btn {
+  background: #facc15; /* YELLOW */
+  color: #000;
+}
+
+.pending-btn:hover {
+  background: #eab308;
+}
+
+.done-btn {
+  background: #22c55e; /* GREEN */
+  color: white;
+}
+
+.done-btn:hover {
+  background: #16a34a;
+}
+
+.delete-btn {
+  background: #ef4444; /* RED */
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* ===== EDIT MODE ===== */
+.edit-box input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* ===== FILTER ===== */
+.bottom-filter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-filter button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #598af4;
+  cursor: pointer;
+}
+
+.bottom-filter button:hover {
+  background: #d1d5db;
+}
+
+/* ===== ADD BUTTON ( + ) ===== */
+.fab {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 28px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.fab:hover {
+  background: #4338ca;
+}
+body {
+  background: #f4f6f8;
+  min-height: 100vh;
+  padding-bottom: 140px; /* space for footer */
+}
+
+
+/* ===== LOGOUT BELOW TASKS ===== */
+.logout-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.logout-btn {
+  padding: 12px 30px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+
+/* ===== ADD TASK PAGE ===== */
+.add-task-page {
+  width: 350px;
+  margin: 100px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.add-task-page h2 {
+  margin-bottom: 15px;
+}
+
+.add-task-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-task-page button {
+  width: 100%;
+  padding: 10px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-task-page button:hover {
+  background: #16a34a;
+}
+/* ===== FOOTER ACTIONS WRAPPER ===== */
+.footer-actions {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  z-index: 10;
+}
+
+/* Filter row */
+.footer-actions .bottom-filter {
+  position: static; /* override fixed */
+}
+
+/* ===== LOGOUT CENTER FIX ===== */
+.logout-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+}
